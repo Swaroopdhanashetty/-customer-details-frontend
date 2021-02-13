@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink ,Link} from "react-router-dom";
 
 
 
@@ -25,6 +25,7 @@ function Navbar() {
             </div>
             </div>
             <NavLink className="btn btn-outline-light" to='/user/Add'>Add Customer</NavLink>
+            <Link className="btn btn-primary" to="/Login"> Log Out </Link>
         </div>
       </nav>
 

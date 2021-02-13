@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { Link  } from 'react-router-dom';
+
 import CustServices from "../services/CustServices";
 
 function AddUser() {
@@ -51,7 +53,10 @@ function AddUser() {
     }
     return (
         <div className="container">
-            <div className="w-75 mx-auto shadow p-5">
+         <div className="w-75 mx-auto shadow p-5">
+         <Link className="btn btn-primary" to="/home">
+          back to Home
+        </Link>
                 <h2 className='text-center md-4'>Add A Customer</h2>
                    <form class="row g-3" onSubmit={e => onSubmit(e)}>
                     <div className='container '>

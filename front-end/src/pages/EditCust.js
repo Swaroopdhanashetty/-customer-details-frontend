@@ -1,9 +1,10 @@
 import React, { useState , useEffect } from 'react'
-import { useHistory,useParams } from 'react-router-dom';
+import { useParams,Link  } from 'react-router-dom';
+
 import CustServices from "../services/CustServices";
 
 const EditCust =()=>{
-    let history = useHistory();
+//    let history = useHistory();
     const { id } = useParams();
    const instialState = {
        id:null,
@@ -55,6 +56,9 @@ const EditCust =()=>{
     
     return (
         <div className="container">
+               <Link className="btn btn-primary" to="/home">
+          back to Home
+        </Link>
             <div className="w-75 mx-auto shadow p-5">
                 <h2 className='text-center md-4'>Edit A Customer</h2>
                    <form class="row g-3" onSubmit={e => onSubmit(e)}>

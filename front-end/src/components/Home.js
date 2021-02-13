@@ -1,4 +1,6 @@
 import React,{useEffect,useState} from 'react'
+import Navbar from '../layout/Navbar'
+
 import CustServices from '../services/CustServices'
 import {Link , useParams} from "react-router-dom"
 function Home() {
@@ -26,7 +28,10 @@ function Home() {
     }
 
     return (
+        <div>
+            <Navbar/>
         <div className="container">
+             
             <div className="py-4">
                 <h1>Home Page</h1>
                 <table className="table border shadow">
@@ -60,6 +65,7 @@ function Home() {
                         
                 </table>
             </div>
+        </div>
         </div>
     )
 }
